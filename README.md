@@ -35,7 +35,7 @@
 ![Screenshot of compitativeAnalysis preview](CompitativeAnalysis.png)
 
 # SWOT Analysis
-![file preview](SwotAnalysis.md)
+[](SwotAnalysis.md)
 
 # Persona
 ![Persona file preview](Persona.md)
