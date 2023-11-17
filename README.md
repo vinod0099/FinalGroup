@@ -30,3 +30,26 @@
 | Nov 13, 2023|       X          |       X          |
 
 
+
+
+
+
+
+
+
+
+
+# Compitative Analysis  
+![Screenshot of compitativeAnalysis preview](CompitativeAnalysis.png)
+
+# SWOT Analysis
+![file preview](SwotAnalysis.md)
+
+# Persona
+![Persona file preview](Persona.md)
+
+# Customer journey
+![Customer file preview](CustomerJourney.md)
+
+# User Story
+![User file preview](UserStory.md)
