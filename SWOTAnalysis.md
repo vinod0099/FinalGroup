@@ -1,4 +1,4 @@
-Conducting a SWOT analysis for a pizza business involves its internal strengths and weaknesses, as well as external opportunities and threats. This analysis incorporate insights into how the business might more effectively use its brand archetype and methods of persuasion.
+SWOT analysis for a pizza business involves its internal strengths and weaknesses, as well as external opportunities and threats. 
 
 Strengths:
 1. Diverse Menu Offerings: Including a range of pizza styles, toppings, and options for dietary restrictions.
