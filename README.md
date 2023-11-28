@@ -30,6 +30,7 @@
 | Nov 13, 2023|       X          |       X          |
 
 
+-Figma Link -[here](https://www.figma.com/file/7WDtgAsxx5uEsr9LPV1db2/Untitled?type=design&node-id=0-1&mode=design&t=pAz5mLgMwKwYxuET-0)
 
 # Compitative Analysis  
 ![Screenshot of compitativeAnalysis preview](CompitativeAnalysis.png)
