@@ -10,9 +10,9 @@
 | Nov 16, 2023|      X           |       X          |
 | Nov 21, 2023|      X           |       X          |
 | Nov 23, 2023|                  |                  |
-| Nov 28, 2023|                  |                  |
-| Nov 30, 2023|                  |                  |
-| Dec 5, 2023 |                  |                  |
+| Nov 28, 2023|      x           |                  |
+| Nov 30, 2023|      x           |                  |
+| Dec 5, 2023 |      x           |                  |
 | Dec 7, 2023 |                  |                  |
 | Dec 12, 2023|                  |                  |
 
@@ -28,6 +28,9 @@
 | Nov 7, 2023 |       X          |       X          |
 | Nov 9, 2023 |       X          |       X          |            
 | Nov 13, 2023|       X          |       X          |
+| Nov 18, 2023|       x          |                  |
+| Nov 26, 2023|       x          |                  |
+|
 
 
 -Figma Link -[here](https://www.figma.com/file/7WDtgAsxx5uEsr9LPV1db2/Untitled?type=design&node-id=0-1&mode=design&t=pAz5mLgMwKwYxuET-0)
