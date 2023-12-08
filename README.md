@@ -28,6 +28,9 @@
 | Nov 7, 2023 |       X          |       X          |
 | Nov 9, 2023 |       X          |       X          |            
 | Nov 13, 2023|       X          |       X          |
+| Nov 18, 2023|       x          |                  |
+| Nov 26, 2023|       x          |                  |
+|
 
 
 -Figma Link -[here](https://www.figma.com/file/7WDtgAsxx5uEsr9LPV1db2/Untitled?type=design&node-id=0-1&mode=design&t=pAz5mLgMwKwYxuET-0)
