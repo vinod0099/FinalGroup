@@ -36,7 +36,7 @@ const Header = () => {
       </NavbarContent>
       <NavbarContent justify="end">
        
-      <NavbarItem>
+        <NavbarItem>
           <Button color="primary" onClick={openMailchimpSignup} variant="flat">
             Sign Up
           </Button>
