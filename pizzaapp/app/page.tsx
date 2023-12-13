@@ -465,7 +465,7 @@ export default function Home() {
 		
 
 		<section>
-		<h1 className="text-center text-4xl mt-[4rem] text-gray-700 font-semibold"></h1>
+		<h1 className="text-center text-4xl mt-[4rem] text-gray-700 font-semibold">Check out our specalities</h1>
 
 			<div className="container max-auto mt-[7rem]">
 
