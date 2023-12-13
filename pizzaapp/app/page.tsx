@@ -5,16 +5,483 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { GithubIcon } from "@/components/icons";
-import Header from "@/components/Header";
-import '/Users/thummalasujithreddy/Downloads/Webfinal/FinalGroup/pizzaapp/styles/globals.css';
 import Hero from "@/components/Hero";
+import HomeMenu from "@/components/HomeMenu";
+import Pizza from '@/components/Pizza'
+import Header from "@/components/Header";
+import AboutUs from '@/components/AboutUs'
 
+const pizzas = [
+	{
+	  id: 1,
+	  name: 'capricciosa',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/capricciosa.webp',
+	  
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 2,
+	  name: 'cheesy',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/cheesy.webp',
+	  priceSm: 10.99,
+	  priceMd: 11.99,
+	  priceLg: 12.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 3,
+	  name: 'hawaii',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/hawaii.webp',
+	  priceSm: 10.99,
+	  priceMd: 11.99,
+	  priceLg: 12.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 4,
+	  name: '',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/italian.webp',
+	  priceSm: 11.99,
+	  priceMd: 12.99,
+	  priceLg: 13.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 5,
+	  name: 'margherita',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/margherita.webp',
+	  priceSm: 9.99,
+	  priceMd: 10.99,
+	  priceLg: 11.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 6,
+	  name: 'pepperoni',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/pepperoni.webp',
+	  priceSm: 10.99,
+	  priceMd: 11.99,
+	  priceLg: 12.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 7,
+	  name: 'quattro formaggi',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/quattro-formaggi.webp',
+	  priceSm: 12.99,
+	  priceMd: 13.99,
+	  priceLg: 14.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 8,
+	  name: 'quattro stagioni',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/quattro-stagioni.webp',
+	  priceSm: 11.99,
+	  priceMd: 12.99,
+	  priceLg: 13.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 9,
+	  name: 'tonno',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/tonno.webp',
+	  priceSm: 10.99,
+	  priceMd: 11.99,
+	  priceLg: 12.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+	  id: 10,
+	  name: 'vegetarian',
+	  description:
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+	  image: '/vegetarian.webp',
+	  priceSm: 9.99,
+	  priceMd: 10.99,
+	  priceLg: 11.99,
+	  toppings: [
+		{
+		  image: '/cherry.png',
+		  name: 'cherry tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/corn.png',
+		  name: 'corn',
+		  price: 2,
+		},
+		{
+		  image: '/fresh-tomatoes.png',
+		  name: 'fresh tomatoes',
+		  price: 2,
+		},
+		{
+		  image: '/jalapeno.png',
+		  name: 'jalapeno',
+		  price: 2,
+		},
+		{
+		  image: '/parmesan.png',
+		  name: 'parmesan',
+		  price: 2,
+		},
+	  ],
+	},
+	{
+		id: 1,
+		name: 'capricciosa',
+		description:
+		  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+		image: '/capricciosa.webp',
+		priceSm: 9.99,
+		priceMd: 10.99,
+		priceLg: 11.99,
+		toppings: [
+		  {
+			image: '/cherry.png',
+			name: 'cherry tomatoes',
+			price: 2,
+		  },
+		  {
+			image: '/corn.png',
+			name: 'corn',
+			price: 2,
+		  },
+		  {
+			image: '/fresh-tomatoes.png',
+			name: 'fresh tomatoes',
+			price: 2,
+		  },
+		  {
+			image: '/jalapeno.png',
+			name: 'jalapeno',
+			price: 2,
+		  },
+		  {
+			image: '/parmesan.png',
+			name: 'parmesan',
+			price: 2,
+		  },
+		],
+	  },
+	  {
+		id: 1,
+		name: 'capricciosa',
+		description:
+		  'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+		image: '/capricciosa.webp',
+		priceSm: 9.99,
+		priceMd: 10.99,
+		priceLg: 11.99,
+		toppings: [
+		  {
+			image: '/cherry.png',
+			name: 'cherry tomatoes',
+			price: 2,
+		  },
+		  {
+			image: '/corn.png',
+			name: 'corn',
+			price: 2,
+		  },
+		  {
+			image: '/fresh-tomatoes.png',
+			name: 'fresh tomatoes',
+			price: 2,
+		  },
+		  {
+			image: '/jalapeno.png',
+			name: 'jalapeno',
+			price: 2,
+		  },
+		  {
+			image: '/parmesan.png',
+			name: 'parmesan',
+			price: 2,
+		  },
+		],
+	  },
+  ];
 export default function Home() {
 	return (
+
+		<>
+        <Header/>
+        <Hero/>
+		<HomeMenu/>
 		
-			<div className="header-top">
-			<Header/>
-			<Hero/>
-		</div>
+
+		<section>
+		<h1 className="text-center text-4xl mt-[4rem] text-gray-700 font-semibold"></h1>
+
+			<div className="container max-auto mt-[7rem]">
+
+				<div className="grid grid-cols-3 gap-8 md:grid-cols-3 xl:grid-cols-4 xl:gap-[30px] py-12">
+					{pizzas.map((pizzas)=>{
+						return <Pizza pizza={pizzas}/>
+					})}
+				</div>
+			</div>
+		</section>
+		<AboutUs/>
+		
+		</>
+		
+		
+		
+		
 	);
 }
