@@ -18,7 +18,9 @@
        </div>
  
        {/* Right Column */}
-      
+       <div className="col-span-1 relative">
+        <Image src="/personpizza1.png" layout="responsive" width={500} height={700} objectFit="contain" alt="pizza" />
+      </div>
      </section>
    );
  };
