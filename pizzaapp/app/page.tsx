@@ -125,7 +125,7 @@ const pizzas = [
 	},
 	{
 	  id: 4,
-	  name: '',
+	  name: 'Italian',
 	  description:
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
 	  image: '/italian.webp',
