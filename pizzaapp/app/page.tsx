@@ -18,7 +18,9 @@ const pizzas = [
 	  description:
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
 	  image: '/capricciosa.webp',
-	  
+	  priceSm: 10.99,
+	  priceMd: 11.99,
+	  priceLg: 12.99,
 	  toppings: [
 		{
 		  image: '/cherry.png',
