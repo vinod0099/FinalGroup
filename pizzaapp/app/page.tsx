@@ -127,7 +127,7 @@ const pizzas = [
 	  id: 4,
 	  name: 'Italian',
 	  description:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+		'Savor the essence of Italy with our Italian Pizza, a masterpiece of simple yet robust flavors. This authentic pizza boasts a thin, crispy crust, layered with a vibrant, herbed tomato sauce. It’s topped with slices of fresh mozzarella, ripe tomatoes, and fragrant basil leaves. Drizzled with extra virgin olive oil and a pinch of sea salt, this pizza is a tribute to traditional Italian craftsmanship and taste.',
 	  image: '/italian.webp',
 	  priceSm: 11.99,
 	  priceMd: 12.99,
