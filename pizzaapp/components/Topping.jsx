@@ -1,6 +1,6 @@
 import React from "react";
 const Topping = () => {
-    return <div>Topping</div>;
+    return <div>Toppings</div>;
   };
   
   export default Topping;
