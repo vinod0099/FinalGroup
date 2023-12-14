@@ -53,7 +53,7 @@ const pizzas = [
 	  id: 2,
 	  name: 'cheesy',
 	  description:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+		'Dive into our Cheesy Pizza, where every bite is a blissful journey through a blend of rich cheeses. With a golden, crispy crust layered with a delicate tomato sauce, this pizza is smothered in a heavenly mix of stretchy mozzarella, sharp cheddar, creamy gorgonzola, and smooth provolone. Its a cheesy delight that perfectly balances flavor and texture, making it an irresistible treat for anyone who adores cheese.',
 	  image: '/cheesy.webp',
 	  priceSm: 10.99,
 	  priceMd: 11.99,
@@ -90,7 +90,7 @@ const pizzas = [
 	  id: 3,
 	  name: 'hawaii',
 	  description:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+		'Experience a slice of paradise with our Hawaiian Pizza, a delightful blend of sweet and savory. This pizza combines juicy pineapple chunks and tender slices of ham on a bed of rich tomato sauce and stretchy mozzarella. Each bite offers a burst of flavors, perfectly balancing the pineapples sweetness with the savory depth of ham, all atop a crispy, golden crust.',
 	  image: '/hawaii.webp',
 	  priceSm: 10.99,
 	  priceMd: 11.99,
