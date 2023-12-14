@@ -16,7 +16,7 @@ const pizzas = [
 	  id: 1,
 	  name: 'capricciosa',
 	  description:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia recusandae dolorum enim eveniet. Mollitia laudantium, sunt blanditiis ratione quam delectus.',
+		'Savor the classic Capricciosa, a delightful blend of rich Italian flavors. Our pizza features a crispy, hand-tossed crust topped with tangy tomato sauce, savory slices of cooked ham, earthy mushrooms, artichokes, and briny black olives. It’s all brought together with a generous layer of melted mozzarella, making each slice a perfect harmony of taste and tradition.',
 	  image: '/capricciosa.webp',
 	  priceSm: 10.99,
 	  priceMd: 11.99,
