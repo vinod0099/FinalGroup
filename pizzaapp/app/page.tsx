@@ -473,7 +473,7 @@ export default function Home() {
 
 				<div className="grid grid-cols-3 gap-8 md:grid-cols-3 xl:grid-cols-4 xl:gap-[30px] py-12">
 					{pizzas.map((pizzas)=>{
-						return <Pizza pizza={pizzas}/>
+						return <Pizza key={pizzas.id} pizza={pizzas}/>
 					})}
 				</div>
 			</div>
