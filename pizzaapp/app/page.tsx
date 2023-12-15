@@ -10,6 +10,7 @@ import HomeMenu from "@/components/HomeMenu";
 import Pizza from '@/components/Pizza'
 import Header from "@/components/Header";
 import AboutUs from '@/components/AboutUs'
+import Script from "next/script";
 
 const pizzas = [
 	{
@@ -461,6 +462,20 @@ export default function Home() {
 	return (
 
 		<>
+		<Script strategy="afterInteractive" src='https://www.googletagmanager.com/gtag/js?id=G-ZTVKCWS8CX'/>
+
+		<Script id="google-analytics" strategy="afterInteractive">
+
+			{
+				`
+				window.datalayer=window.datalayer|| [];
+				function gtag(){datalayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-ZTVKCWS8CX')
+
+				`
+			}
+		</Script>
         <Header/>
         <Hero/>
 		<HomeMenu/>
