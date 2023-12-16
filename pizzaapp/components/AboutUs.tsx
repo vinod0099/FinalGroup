@@ -56,7 +56,7 @@ const AboutUs = () => {
           </div>
           <div className="lg:w-1/2 text-gray-800">
             <p className="text-xl mb-6">
-             
+            Beyond just serving food, Pizza Hub fosters a sense of community. Our tables are meeting spots where families gather, friends laugh, and memories are crafted. Every meal at our hub is an opportunity to experience the warmth and joy that only a shared pizza can bring.
             </p>
           </div>
         </div>
