@@ -38,7 +38,7 @@ const AboutUs = () => {
           </div>
           <div className="lg:w-1/2 text-gray-800">
             <p className="text-xl mb-6">
-             
+            At Pizza Hub, we believe the heart of a great pizza lies in the freshness of its ingredients. From the sun-kissed tomatoes to the fragrant basil, each ingredient is handpicked from local farms. This commitment to quality brings the vibrancy of Italy to every bite you take.
             </p>
           </div>
         </div>
