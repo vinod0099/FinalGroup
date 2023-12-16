@@ -48,7 +48,7 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
               <img 
-                src="/abot3.jpeg" // Replace with your actual image path
+                src="/about3.jpeg" // Replace with your actual image path
                 alt="Community and Connection"
                 className="object-cover w-full h-full"
               />
