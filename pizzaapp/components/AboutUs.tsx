@@ -20,7 +20,7 @@ const AboutUs = () => {
           </div>
           <div className="lg:w-1/2 text-gray-800">
             <p className="text-xl mb-6">
-              
+            Our journey began decades ago in the cobblestone streets of Naples, the birthplace of pizza. Here, we learned that true pizza making is an art form, passed down through generations of skilled artisans. Our founder, Giuseppe, brought these secrets across the seas to share with you.
             </p>
           </div>
         </div>
