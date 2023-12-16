@@ -1,22 +1,68 @@
-'use client';
+import React from "react";
 
 const AboutUs = () => {
   return (
-    <section className="py-12 bg-gray-100">
-      <div className="container mx-auto">
-        <h2 className="text-center text-4xl text-gray-700 font-semibold">About Us</h2>
-        <article className="text-gray-800 text-[16px] font-medium leading-relaxed mt-[2rem]">
-          Welcome to our pizza paradise! At PizzaFiesta, we are more than just a pizzeria; we are culinary artisans dedicated to delivering an unforgettable dining experience. Our journey began with a passion for perfecting the art of pizza-making, and today, we proudly share our creations with you.
-        </article>
-        {/* ... other articles ... */}
-        <article className="text-gray-800 text-[16px] font-medium leading-relaxed mt-[2rem]">
-          Join us on a culinary journey where each slice tells a story, and each visit is a celebration of flavor and warmth. PizzaFiesta invites you to savor the magic of pizza crafted with love and dedication. Come, be a part of our pizza-loving community, and experience the joy of great food and great company.
-        </article>
+    <section id="AboutUs" className="bg-coolGray-100">
+      <h2 className="text-5xl font-bold my-16 text-center text-red-600">Our Story</h2>
+
+      <div className="container mx-auto px-4 lg:px-16">
+        {/* Each Row with Image and Content */}
+        {/* First Row */}
+        <div className="flex flex-col lg:flex-row items-start gap-12 mb-16">
+          <div className="lg:w-1/2">
+            <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
+              <img 
+                src="/AboutPage.jeg" // Replace with your actual image path
+                alt="Tradition of Pizza Making"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+          <div className="lg:w-1/2 text-gray-800">
+            <p className="text-xl mb-6">
+              
+            </p>
+          </div>
+        </div>
+
+        {/* Second Row */}
+        <div className="flex flex-col lg:flex-row items-start gap-12 mb-16">
+          <div className="lg:w-1/2">
+            <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
+              <img 
+                src="/abut2.jpg" // Replace with your actual image path
+                alt="Artisanal Ingredients"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+          <div className="lg:w-1/2 text-gray-800">
+            <p className="text-xl mb-6">
+             
+            </p>
+          </div>
+        </div>
+
+        {/* Third Row */}
+        <div className="flex flex-col lg:flex-row items-start gap-12">
+          <div className="lg:w-1/2">
+            <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
+              <img 
+                src="/abot3.jpeg" // Replace with your actual image path
+                alt="Community and Connection"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+          <div className="lg:w-1/2 text-gray-800">
+            <p className="text-xl mb-6">
+             
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
 export default AboutUs;
-
-  
