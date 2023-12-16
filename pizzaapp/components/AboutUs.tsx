@@ -30,7 +30,7 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
               <img 
-                src="/abut2.jpg" // Replace with your actual image path
+                src="/about2.jpg" // Replace with your actual image path
                 alt="Artisanal Ingredients"
                 className="object-cover w-full h-full"
               />
