@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="bg-orange-600 text-white text-sm lg:text-base w-full">
       <div className="w-full max-w-full mx-auto py-6 overflow-hidden">
         {/* Address and contact info */}
-        <div className="hi">
+        <div className="text-center mb-4">
           
         </div>
         {/* Navigation links */}
