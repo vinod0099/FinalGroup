@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-orange-600 text-white text-sm lg:text-base w-10">
+    <footer className="bg-orange-600 text-white text-sm lg:text-base w-full">
       <div className="w-full max-w-full mx-auto py-60 overflow-hidden">
         {/* Address and contact info */}
         <div className="hi">
