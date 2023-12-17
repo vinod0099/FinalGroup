@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="w-full max-w-full mx-auto py-6 overflow-hidden">
         {/* Address and contact info */}
         <div className="text-center mb-4">
-        <p>6037 SOUTH BLVD CHARLOTTE, NC</p>
+          <p>6037 SOUTH BLVD CHARLOTTE, NC</p>
           <p>704-554-6601 704-554-6602</p>
         </div>
         {/* Navigation links */}
