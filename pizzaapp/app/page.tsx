@@ -10,7 +10,10 @@ import HomeMenu from "@/components/HomeMenu";
 import Pizza from '@/components/Pizza'
 import Header from "@/components/Header";
 import AboutUs from '@/components/AboutUs'
-import Script from "next/script";
+
+import MenuTitle from "@/components/Menutitle";
+
+
 
 const pizzas = [
 	{
@@ -462,29 +465,17 @@ export default function Home() {
 	return (
 
 		<>
-		<Script strategy="afterInteractive" src='https://www.googletagmanager.com/gtag/js?id=G-ZTVKCWS8CX'/>
-
-		<Script id="google-analytics" strategy="afterInteractive">
-
-			{
-				`
-				window.datalayer=window.datalayer|| [];
-				function gtag(){datalayer.push(arguments);}
-				gtag('js', new Date());
-				gtag('config', 'G-ZTVKCWS8CX')
-
-				`
-			}
-		</Script>
+		
         <Header/>
         <Hero/>
+	
 		<HomeMenu/>
 		
 
-		<section>
-		<h1 className="text-center text-4xl mt-[4rem] text-gray-700 font-semibold">Check out our specalities</h1>
+		<section id="menu">
+	
 
-			<div className="container max-auto mt-[7rem]">
+			<div className="container max-auto ">
 
 				<div className="grid grid-cols-3 gap-8 md:grid-cols-3 xl:grid-cols-4 xl:gap-[30px] py-12">
 					{pizzas.map((pizzas)=>{
