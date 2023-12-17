@@ -12,7 +12,7 @@ const Footer = () => {
         {/* Navigation links */}
         <div className="flex justify-center space-x-4 mb-4">
           <a href="#home" className="hover:text-gray-300">HOME</a>
-          <a href="#me" className="hover:text-gray-300">MENU</a>
+          <a href="#menu" className="hover:text-gray-300">MENU</a>
          
         </div>
         {/* Copyright */}
