@@ -1,43 +1,46 @@
 'use client'
-// Header.js
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 
 const Header = () => {
   const openMailchimpSignup = () => {
-    // Replace 'MAILCHIMP_SIGNUP_URL' with the actual Mailchimp signup form URL
     const mailchimpSignupUrl = 'http://eepurl.com/iFcxPQ';
-    
-    // Open the Mailchimp signup form in a new tab
     window.open(mailchimpSignupUrl, '_blank');
   };
 
   return (
-    <Navbar>
+    <Navbar className="navbar">
       <NavbarBrand>
-        {/* Your brand content goes here */}
+        <img 
+          src="/logo-png.png" 
+          alt="Your Brand Logo" 
+          className="mt-2 ml-0 w-[220px] h-[50px]" // Adjust the margin-top (mt-2) and margin-left (ml-0) as needed
+        />
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color="foreground" href="#home">
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem >
-          <Link href="#" aria-current="page">
+        <NavbarItem>
+          <Link href="#menu" color="foreground" >
             Menu
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#">
-            AboutUs
+          <Link color="foreground" href="#aboutus">
+            About Us
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-       
         <NavbarItem>
-          <Button color="primary" onClick={openMailchimpSignup} variant="flat">
+          {/* Tailwind CSS applied for orange background and hover effect */}
+          <Button 
+            className="bg-orange-500 text-white hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            onClick={openMailchimpSignup}
+          >
             Sign Up
           </Button>
         </NavbarItem>
