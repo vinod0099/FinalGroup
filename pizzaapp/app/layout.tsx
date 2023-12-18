@@ -21,7 +21,7 @@ export default function RootLayout({
     return (
         <html lang="en" suppressHydrationWarning>
             <head />
-			<GoogleAnalytics GA_MEASUREMENT_ID="G-E56W4YQPK5"/>
+			<GoogleAnalytics GA_MEASUREMENT_ID="G-792B4TR99P"/>
             <body
                 className={clsx(
                     "min-h-screen bg-background font-sans antialiased",
