@@ -13,9 +13,9 @@ const Hero = () => {
             <p className="text-gray-500 text-xl sm:text-3xl font-semibold mb-8"> Sign Up Now and your journey to happiness begins with a <span className="text-orange-500">Free Pizza</span> from  us on your<br/><span className="text-orange-500">First Order</span></p>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-orange-500 text-2xl sm:text-3xl flex items-center justify-center text-white px-4 sm:px-6 py-2 rounded-full text-sm w-full sm:w-auto">
-                ORDER NOW
-              </button>
+            <a href="#menu" className="bg-orange-500 text-2xl sm:text-3xl flex items-center justify-center text-white px-4 sm:px-6 py-2 rounded-full text-sm w-full sm:w-auto">
+  ORDER NOW
+</a>
             </div>
           </div>
         </div>

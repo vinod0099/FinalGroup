@@ -29,7 +29,7 @@ const Header = () => {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#aboutus">
+          <Link color="foreground" href="#AboutUs">
             About Us
           </Link>
         </NavbarItem>
