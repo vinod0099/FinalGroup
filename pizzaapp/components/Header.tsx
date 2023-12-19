@@ -12,7 +12,7 @@ const Header = () => {
     <Navbar className="navbar">
       <NavbarBrand>
         <img 
-          src="/logo-png.png" 
+          src="/logo-png.webp" 
           alt="Your Brand Logo" 
           className="mt-2 ml-0 w-[220px] h-[50px]" // Adjust the margin-top (mt-2) and margin-left (ml-0) as needed
         />

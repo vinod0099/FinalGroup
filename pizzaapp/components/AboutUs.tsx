@@ -12,7 +12,7 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
               <img 
-                src="/AboutPage.jpeg" // Replace with your actual image path
+                src="/AboutPage.webp" // Replace with your actual image path
                 alt="Tradition of Pizza Making"
                 className="object-cover w-full h-full"
               />
@@ -30,7 +30,7 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
               <img 
-                src="/about2.jpg" // Replace with your actual image path
+                src="/about2.webp" // Replace with your actual image path
                 alt="Artisanal Ingredients"
                 className="object-cover w-full h-full"
               />
@@ -48,7 +48,7 @@ const AboutUs = () => {
           <div className="lg:w-1/2">
             <div className="overflow-hidden rounded-lg shadow-lg h-80"> {/* Adjust the height as necessary */}
               <img 
-                src="/about3.jpeg" // Replace with your actual image path
+                src="/about3.webp" // Replace with your actual image path
                 alt="Community and Connection"
                 className="object-cover w-full h-full"
               />
