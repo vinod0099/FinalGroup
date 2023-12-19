@@ -152,7 +152,7 @@ test('Footer navigation links are visible and clickable', async ({ page }) => {
 
 
 test('Footer displays correct copyright text', async ({ page }) => {
-  await page.goto('http://localhost:3000'); // Replace with your app URL
+  await page.goto('https://final-group.vercel.app/'); // Replace with your app URL
 
   const copyRight = await page.locator('text=/© Pizza Hub 2023. All rights reserved./');
   await expect(copyRight).toBeVisible();
@@ -165,7 +165,7 @@ test.describe('CookieBanner component tests', () => {
   
   test.beforeEach(async ({ page }) => {
     // Navigate to the page where CookieBanner is rendered
-    await page.goto('http://localhost:3000'); // Replace with your URL
+    await page.goto('https://final-group.vercel.app/'); // Replace with your URL
   });
 
   test('Cookie banner is visible when no consent is stored', async ({ page }) => {
@@ -198,7 +198,7 @@ test.describe('CookieBanner component tests', () => {
 test.describe('MenuTitle component tests', () => {
   test('MenuTitle displays the correct heading', async ({ page }) => {
     // Navigate to the page where the MenuTitle component is rendered
-    await page.goto('http://localhost:3000'); // Replace with the correct URL
+    await page.goto('https://final-group.vercel.app/'); // Replace with the correct URL
 
     // Locate the heading element and get its text content
     const heading = await page.locator('h2:has-text("A Slice of Heaven")');
@@ -210,7 +210,7 @@ test.describe('MenuTitle component tests', () => {
 
   test('MenuTitle has the correct subtitle', async ({ page }) => {
     // Navigate to the page where the MenuTitle component is rendered
-    await page.goto('http://localhost:3000'); // Replace with the correct URL
+    await page.goto('https://final-group.vercel.app/'); // Replace with the correct URL
 
     // Locate the subtitle element and get its text content
     const subtitle = await page.locator('p:has-text("Discover flavors that delight the senses")');
@@ -226,7 +226,7 @@ test.describe('MenuTitle component tests', () => {
 
 test('MenuTitle heading has the correct styles', async ({ page }) => {
   // Navigate to the page where the MenuTitle component is rendered
-  await page.goto('http://localhost:3000'); // Replace with the correct URL
+  await page.goto('https://final-group.vercel.app/'); // Replace with the correct URL
 
   // Locate the heading element
   const heading = await page.locator('h2:has-text("A Slice of Heaven")');
