@@ -113,7 +113,7 @@ test.describe('Footer component tests', () => {
   
   test.beforeEach(async ({ page }) => {
     // Navigate to the page where the Footer component is rendered
-    await page.goto('http://localhost:3000'); // Replace with your app URL
+    await page.goto('https://final-group.vercel.app/'); // Replace with your app URL
   });
 
   test('Footer displays the correct address', async ({ page }) => {
@@ -132,7 +132,7 @@ test.describe('Footer component tests', () => {
 
 
 test('Footer navigation links are visible and clickable', async ({ page }) => {
-  await page.goto('http://localhost:3000'); // Replace with your app URL
+  await page.goto('https://final-group.vercel.app/'); // Replace with your app URL
 
   // Use a more specific locator that targets the footer
   const homeLink = await page.locator('footer >> text=HOME');
