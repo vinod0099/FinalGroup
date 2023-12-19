@@ -1,7 +1,7 @@
 {
     "tests": [
       {
-        "name": "Playwright Tests",
+        "name": "Playwright test",
         "setup": "npm install && npx playwright install chromium --with-deps",
         "run": "npm run test",
         "input": "",
@@ -11,5 +11,4 @@
         "points": 100
       }
     ]
-  }
-  
+}
